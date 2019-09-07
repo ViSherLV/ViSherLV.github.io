@@ -1,0 +1,147 @@
+main {
+    height: 800px;
+    border: 2px solid #25b99a;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+body {
+    height: 98vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    width: 500px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    border: 2px solid #25b99a;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.task p {
+    width: 350px;
+    font-size: 18px;
+    word-wrap: break-word;
+    margin-right: 58px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.task-done,
+.task-not-done {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    background-image: url(../IMG/baseline-done_all-24px.svg);
+    cursor: pointer;
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    background-position: 100%;
+    outline: none;
+
+
+}
+
+.task-not-done {
+    background-image: url(../IMG/delete.png);
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+}
+
+.list-activity {
+
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+header {
+    width: 500px;
+    height: 80px;
+    padding: 15px;
+    background: #25b99a;
+    box-shadow: 0px 2px 4px rgba(44, 62, 80, 0.15);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+header input {
+    width: 400px;
+    height: 50px;
+    float: left;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    text-indent: 18px;
+    padding: 0 60px 0 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px 25px 25px 5px;
+    border: 0px;
+    box-shadow: none;
+    outline: none;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+header input::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+header input:-moz-input-placeholder {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+header input::-moz-input-placeholder {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+header input:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+header button {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    margin-left: -40px;
+
+    z-index: 2;
+    border-radius: 25px;
+    background: #fff;
+    border: 0px;
+    box-shadow: none;
+    outline: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+header button svg {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    margin: -8px 0 0 -8px;
+}
+
+header button svg .fill {
+    fill: #25b99a;
+}
